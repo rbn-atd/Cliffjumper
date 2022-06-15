@@ -1,7 +1,7 @@
 class_name Purp
 extends Actor
 
-export var headshot_impulse: = 5000.0
+export var headshot_impulse: = 1000.0
 var HEALTH = 10
 
 onready var sprite = $SpiderPurpAni

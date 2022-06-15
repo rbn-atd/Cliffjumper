@@ -2,11 +2,16 @@
 
 importer="texture"
 type="StreamTexture"
-valid=false
+path="res://.import/iconV1.png-1f1953dfc938e75a9171be4964bd14f7.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://icon.png"
+source_file="res://iconV1.png"
+dest_files=[ "res://.import/iconV1.png-1f1953dfc938e75a9171be4964bd14f7.stex" ]
+
 [params]
 
 compress/mode=0
