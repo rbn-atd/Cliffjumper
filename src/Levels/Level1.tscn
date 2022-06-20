@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/Actors/purp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://src/Objects/Pizza.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/MacOS Lion.png" type="Texture" id=6]
 [ext_resource path="res://src/Levels/LevelFinal.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/UserInterface/UI.tscn" type="PackedScene" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 80, 0, 80, 80, 0, 80 )
@@ -54,6 +55,11 @@ points = PoolVector2Array( 0, 0, 80, 0, 80, 80, 0, 80 )
 
 [node name="FloatyTriples" type="Node2D"]
 
+[node name="UserInterface" type="CanvasLayer" parent="."]
+layer = 128
+
+[node name="UI" parent="UserInterface" instance=ExtResource( 8 )]
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 4 )
 cell_size = Vector2( 80, 80 )
@@ -72,85 +78,95 @@ margin_right = 1925.0
 margin_bottom = 1266.0
 texture = ExtResource( 6 )
 
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( -1031, 192 )
+rotation = 0.015339
+scale = Vector2( 1, 1 )
+
 [node name="Portal" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1764, 542 )
+position = Vector2( 1758, 547 )
 rotation = 0.015339
 next_scene = ExtResource( 7 )
 
-[node name="Pizza7" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1882, 220 )
-rotation = 0.015339
+[node name="Enemies" type="Node" parent="."]
 
-[node name="Pizza8" parent="." instance=ExtResource( 5 )]
-position = Vector2( 966, 528 )
-rotation = 0.015339
-
-[node name="Pizza9" parent="." instance=ExtResource( 5 )]
-position = Vector2( 765, 369 )
-rotation = 0.015339
-
-[node name="Pizza10" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1213, 293 )
-rotation = 0.015339
-
-[node name="Pizza11" parent="." instance=ExtResource( 5 )]
-position = Vector2( -438, 381 )
-rotation = 0.015339
-
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -1000, 202 )
-rotation = 0.015339
-
-[node name="Enemy" parent="." instance=ExtResource( 4 )]
+[node name="Enemy" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( -488, 37 )
 
-[node name="Enemy3" parent="." instance=ExtResource( 4 )]
+[node name="Enemy3" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 1622, 189 )
 
-[node name="Enemy2" parent="." instance=ExtResource( 4 )]
+[node name="Enemy2" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 254, 271 )
 
-[node name="Enemy4" parent="." instance=ExtResource( 4 )]
+[node name="Enemy4" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 1517, 530 )
 
-[node name="Enemy5" parent="." instance=ExtResource( 4 )]
+[node name="Enemy5" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 1067, 344 )
 
-[node name="Enemy6" parent="." instance=ExtResource( 4 )]
+[node name="Enemy6" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 907, 196 )
 
-[node name="Enemy7" parent="." instance=ExtResource( 4 )]
+[node name="Enemy7" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 167, 510 )
 
-[node name="Enemy9" parent="." instance=ExtResource( 4 )]
+[node name="Enemy9" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 429, 206 )
 
-[node name="Enemy10" parent="." instance=ExtResource( 4 )]
+[node name="Enemy10" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( -823, 499 )
 
-[node name="Enemy8" parent="." instance=ExtResource( 4 )]
+[node name="Enemy8" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( -225, 523 )
 
-[node name="Pizza" parent="." instance=ExtResource( 5 )]
+[node name="Pizzas" type="Node" parent="."]
+
+[node name="Pizza7" parent="Pizzas" instance=ExtResource( 5 )]
+position = Vector2( 1882, 220 )
+rotation = 0.015339
+scale = Vector2( 1, 1 )
+
+[node name="Pizza8" parent="Pizzas" instance=ExtResource( 5 )]
+position = Vector2( 966, 528 )
+rotation = 0.015339
+scale = Vector2( 1, 1 )
+
+[node name="Pizza9" parent="Pizzas" instance=ExtResource( 5 )]
+position = Vector2( 765, 369 )
+rotation = 0.015339
+scale = Vector2( 1, 1 )
+
+[node name="Pizza10" parent="Pizzas" instance=ExtResource( 5 )]
+position = Vector2( 1213, 293 )
+rotation = 0.015339
+scale = Vector2( 1, 1 )
+
+[node name="Pizza11" parent="Pizzas" instance=ExtResource( 5 )]
+position = Vector2( -438, 381 )
+rotation = 0.015339
+scale = Vector2( 1, 1 )
+
+[node name="Pizza" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( 605, 299 )
 rotation = -0.0435178
 
-[node name="Pizza2" parent="." instance=ExtResource( 5 )]
+[node name="Pizza2" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( -190, 298 )
 rotation = -0.0435178
 
-[node name="Pizza3" parent="." instance=ExtResource( 5 )]
+[node name="Pizza3" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( -711, 542 )
 rotation = -0.0435178
 
-[node name="Pizza4" parent="." instance=ExtResource( 5 )]
+[node name="Pizza4" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( 243, 542 )
 rotation = -0.0435178
 
-[node name="Pizza5" parent="." instance=ExtResource( 5 )]
+[node name="Pizza5" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( -708, 302 )
 rotation = -0.0435178
 
-[node name="Pizza6" parent="." instance=ExtResource( 5 )]
+[node name="Pizza6" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( 1639, 229 )
 rotation = -0.0435178

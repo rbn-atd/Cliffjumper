@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Among Us Impostor Sound Effect.mp3-02d2b8f0ee108bcac4ac585c3cb604cf.mp3str"
+
+[deps]
+
+source_file="res://assets/Among Us Impostor Sound Effect.mp3"
+dest_files=[ "res://.import/Among Us Impostor Sound Effect.mp3-02d2b8f0ee108bcac4ac585c3cb604cf.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

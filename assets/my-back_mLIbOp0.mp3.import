@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/my-back_mLIbOp0.mp3-129d93bf9197b20c60d2ec7b44cd5a08.mp3str"
+
+[deps]
+
+source_file="res://assets/my-back_mLIbOp0.mp3"
+dest_files=[ "res://.import/my-back_mLIbOp0.mp3-129d93bf9197b20c60d2ec7b44cd5a08.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
