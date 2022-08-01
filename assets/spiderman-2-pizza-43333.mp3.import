@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/spiderman-2-pizza-43333.mp3-bbafa1e3a5c510ef6acfac7dc7748a81.mp3str"
+
+[deps]
+
+source_file="res://assets/spiderman-2-pizza-43333.mp3"
+dest_files=[ "res://.import/spiderman-2-pizza-43333.mp3-bbafa1e3a5c510ef6acfac7dc7748a81.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

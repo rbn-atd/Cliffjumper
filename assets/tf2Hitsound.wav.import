@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/tf2Hitsound.wav-e319da5b9e41b230ddc5d782a0734dc3.sample"
+
+[deps]
+
+source_file="res://assets/tf2Hitsound.wav"
+dest_files=[ "res://.import/tf2Hitsound.wav-e319da5b9e41b230ddc5d782a0734dc3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

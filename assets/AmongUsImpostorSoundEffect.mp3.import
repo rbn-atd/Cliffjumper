@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/AmongUsImpostorSoundEffect.mp3-be9182c3ef537b6d9126bda53e3a4b39.mp3str"
+
+[deps]
+
+source_file="res://assets/AmongUsImpostorSoundEffect.mp3"
+dest_files=[ "res://.import/AmongUsImpostorSoundEffect.mp3-be9182c3ef537b6d9126bda53e3a4b39.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

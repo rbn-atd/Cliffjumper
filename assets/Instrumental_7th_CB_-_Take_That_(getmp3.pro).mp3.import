@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Instrumental_7th_CB_-_Take_That_(getmp3.pro).mp3-59c14b73603ca35749e5a50166964e47.mp3str"
+
+[deps]
+
+source_file="res://assets/Instrumental_7th_CB_-_Take_That_(getmp3.pro).mp3"
+dest_files=[ "res://.import/Instrumental_7th_CB_-_Take_That_(getmp3.pro).mp3-59c14b73603ca35749e5a50166964e47.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
