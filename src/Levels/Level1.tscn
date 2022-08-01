@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/Actors/purp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/MacOS Lion.png" type="Texture" id=6]
 [ext_resource path="res://src/Levels/LevelFinal.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/UserInterface/UI.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/spiderman-2-pizza-43333.mp3" type="AudioStream" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 80, 0, 80, 80, 0, 80 )
@@ -81,7 +82,6 @@ texture = ExtResource( 6 )
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( -1031, 192 )
 rotation = 0.015339
-scale = Vector2( 1, 1 )
 
 [node name="Portal" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1758, 547 )
@@ -125,27 +125,22 @@ position = Vector2( -225, 523 )
 [node name="Pizza7" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( 1882, 220 )
 rotation = 0.015339
-scale = Vector2( 1, 1 )
 
 [node name="Pizza8" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( 966, 528 )
 rotation = 0.015339
-scale = Vector2( 1, 1 )
 
 [node name="Pizza9" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( 765, 369 )
 rotation = 0.015339
-scale = Vector2( 1, 1 )
 
 [node name="Pizza10" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( 1213, 293 )
 rotation = 0.015339
-scale = Vector2( 1, 1 )
 
 [node name="Pizza11" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( -438, 381 )
 rotation = 0.015339
-scale = Vector2( 1, 1 )
 
 [node name="Pizza" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( 605, 299 )
@@ -170,3 +165,8 @@ rotation = -0.0435178
 [node name="Pizza6" parent="Pizzas" instance=ExtResource( 5 )]
 position = Vector2( 1639, 229 )
 rotation = -0.0435178
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 9 )
+volume_db = -10.948
+autoplay = true

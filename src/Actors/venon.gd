@@ -11,7 +11,7 @@ onready var sprite = $VenonAni
 var skale = 0.119
 func _ready() -> void:
 	set_physics_process(false)
-	velocity.x = -speed.x
+	velocity.x = -speed.x * 1.25
 	
 
 func _on_HeadshotDetector_body_entered(body: PhysicsBody2D) -> void:
@@ -23,7 +23,6 @@ func _on_HeadshotDetector_body_entered(body: PhysicsBody2D) -> void:
 			sound.play()
 			HEALTH -= 1
 		else:
-			
 			get_node("CollisionShape2D").disabled = true
 			die()
 		
@@ -42,6 +41,6 @@ func _physics_process(delta: float) -> void:
 	velocity.y = move_and_slide(velocity, FLOOR_NORMAL).y	
 
 func die() -> void:
-	sound2.play()
+	AudioManager.play("res://assets/AmongUsImpostorSoundEffect.mp3")
 	queue_free()
 	PlayerData.score += score

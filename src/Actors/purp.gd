@@ -8,7 +8,7 @@ onready var sound2: AudioStreamPlayer2D = get_node("AudioStreamPlayer2D2")
 
 var HEALTH = 10
 
-onready var sprite = $SpiderPurpAni
+onready var sprite = $SpiderPurp
 
 func _on_EnemyDetector_area_entered(area: Area2D) -> void:
 	
@@ -19,7 +19,6 @@ func _on_EnemyDetector_body_entered(body: PhysicsBody2D) -> void:
 		sound.play()
 		HEALTH -= 1
 	else:
-		sound2.play()
 		die()
 	
 	
@@ -64,6 +63,7 @@ func calculate_headshot_velocity(linear_velocity: Vector2, impulse: float) -> Ve
 	return out
 
 func die() -> void:
+	AudioManager.play("res://assets/Among Us death 3.mp3")
 	PlayerData.deaths += 1
 	queue_free()
 	

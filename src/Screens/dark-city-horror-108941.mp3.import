@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/dark-city-horror-108941.mp3-648d81c603ba0ea09f5615f3989a57f7.mp3str"
+
+[deps]
+
+source_file="res://src/Screens/dark-city-horror-108941.mp3"
+dest_files=[ "res://.import/dark-city-horror-108941.mp3-648d81c603ba0ea09f5615f3989a57f7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

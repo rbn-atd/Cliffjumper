@@ -23,6 +23,7 @@ func update_interface() -> void:
 func on_PlayerData_player_died() -> void:
 	self.paused = true
 	pause_title.text = "You died!"
+	
 
 func set_paused(value: bool) -> void:
 	paused = value
