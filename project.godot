@@ -33,6 +33,7 @@ config/macos_native_icon="res://iconV0.icns"
 
 [autoload]
 
+AudioManager="*res://src/AutoLoad/AudioManager.gd"
 PluginSettings="*res://addons/github-integration/scripts/PluginSettings.gd"
 IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
 UserData="*res://addons/github-integration/scripts/user_data.gd"
